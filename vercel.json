@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "smit-card-portfolio",
+    "builds": [
+      {
+        "src": "app.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "app.js"
+      }
+    ]
+  }
