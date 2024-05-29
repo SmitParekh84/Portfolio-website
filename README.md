@@ -15,7 +15,7 @@ This repository contains the source code for a personal portfolio website with a
 1. Clone the repository:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/SmitParekh84/Smit-Card-Portfolio.git
 ```
 
 2. Install dependencies:
