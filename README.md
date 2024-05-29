@@ -1,6 +1,6 @@
 
 # Personal Portfolio Website with Node.js Backend
-
+![Project 1](https://raw.githubusercontent.com/SmitParekh84/Images/main/smit-Card_portfolio/Web_Mobile%20%E2%80%94%20Template%20Website%20(Community)-1.png) 
 This repository contains the source code for a personal portfolio website with a Node.js backend. The website showcases projects, skills, experiences, and a blog section, while the backend handles contact form submissions and email notifications.
 
 ## Features
@@ -52,9 +52,7 @@ npm run dev
 3. Use the contact form to send messages directly to your email.
 4. Upon successful submission, you will be redirected to a success page.
 
-## Portfolio Showcase
 
-![Project 1](https://raw.githubusercontent.com/SmitParekh84/Images/main/smit-Card_portfolio/Web_Mobile%20%E2%80%94%20Template%20Website%20(Community)-1.png) 
 
 ## Contributing
 
