@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import  dotenv  from "dotenv";
-
+import projects from './projects.js';
 import mailController from './controller/mailController.js'; // Add .js extension for Node.js to recognize the file
 
 
@@ -18,8 +18,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json())
 
+
+
 app.get("/", async (req, res) => {
-    res.render("pages/index");
+    res.render("pages/index", { projects });
   });
 
 app.get("/download-file", (req,res)=>{
@@ -36,3 +38,4 @@ app.get('/success', (req, res) => {
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
   });
+

@@ -57,173 +57,21 @@
       </div>
 
       <ul class="project-list">
-        <li
-          class="project-item active"
-          data-filter-item
-          data-category="web design"
-        >
-          <a
-            href="https://directorportfolio.my.canva.site/"
-            target="_blank"
-          >
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img
-                src="images/projects/project-3.png"
-                alt="dsm."
-                loading="lazy"
-              />
-            </figure>
-
-            <h3 class="project-title">Director Portfolio</h3>
-
-            <p class="project-category">Web design</p>
-          </a>
-        </li>
-
-        <li
-          class="project-item active"
-          data-filter-item
-          data-category="web development"
-        >
-          <a
-            href="https://smitparekhportfolio.netlify.app/"
-            target="_blank"
-          >
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img
-                src="images/projects/project-1.png"
-                alt="orizon"
-                loading="lazy"
-              />
-            </figure>
-
-            <h3 class="project-title">PortFolio</h3>
-
-            <p class="project-category">Web development</p>
-          </a>
-        </li>
-        <!-- tin dog -->
-        <li
-          class="project-item active"
-          data-filter-item
-          data-category="web design"
-        >
-          <a
-            href="https://smitparekh84.github.io/Mini-BootStrap-WebPage/"
-            target="_blank"
-          >
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img
-                src="images/projects/project-2.png"
-                alt="fundo"
-                loading="lazy"
-              />
-            </figure>
-
-            <h3 class="project-title">TinDog</h3>
-
-            <p class="project-category">Web design</p>
-          </a>
-        </li>
-        <!-- end tin dog -->
-
-        <!-- yt1 -->
-        <li
-          class="project-item active"
-          data-filter-item
-          data-category="video editing"
-        >
-          <a
-            href="https://www.youtube.com/playlist?list=PLLlMxB89AwL449pZeTMNQFe_h7Hn43HcL"
-            target="_blank"
-          >
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img
-                src="images/projects/yt-youtube.png"
-                alt="arrival"
-                loading="lazy"
-              />
-            </figure>
-            <h3 class="project-title">
-              Motion graphic / Youtube Videos / Branding video
-            </h3>
-
-            <p class="project-category">Video editing</p>
-          </a>
-        </li>
-        <!-- yt1 -->
-        <!-- yt2 -->
-        <li
-          class="project-item active"
-          data-filter-item
-          data-category="video editing"
-        >
-          <a
-            href="https://www.youtube.com/playlist?list=PLJB1nJ8VTILlq2aZnHUYyVLJ-QnpOKb8f"
-            target="_blank"
-          >
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img
-                src="images/projects/yt-shorts.png"
-                alt="arrival"
-                loading="lazy"
-              />
-            </figure>
-            <h3 class="project-title">
-              Motion graphic / Youtube Videos / Branding video
-            </h3>
-
-            <p class="project-category">Video editing</p>
-          </a>
-        </li>
-        <!-- yt2 -->
-        <!-- cb -->
-        <li
-          class="project-item active"
-          data-filter-item
-          data-category="video editing"
-        >
-          <a
-            href="https://player.vimeo.com/video/950508563?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            target="_blank"
-          >
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img
-                src="images/projects/yt3.png"
-                alt="arrival"
-                loading="lazy"
-              />
-            </figure>
-            <h3 class="project-title">Demo Video</h3>
-
-            <p class="project-category">Video editing</p>
-          </a>
-        </li>
-        <!-- cb -->
+       
+        <% projects.forEach(project => { %>
+          <li class="project-item active" data-filter-item data-category="<%= project.category %>">
+            <a href="<%= project.link %>" target="_blank">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="<%= project.imgSrc %>" alt="<%= project.imgAlt %>" loading="lazy" />
+              </figure>
+              <h3 class="project-title"><%= project.title %></h3>
+              <p class="project-category"><%= project.category %></p>
+            </a>
+          </li>
+        <% }) %>
       </ul>
     </section>
   </article>
