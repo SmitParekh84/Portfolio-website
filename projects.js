@@ -1,6 +1,14 @@
 const projects = [
   
     {
+      title: "Keeper",
+      category: "web development",
+      link: "https://github.com/SmitParekh84/Keeper/",
+      imgSrc: "https://github.com/SmitParekh84/Images/blob/main/Keeper%20app%20react/showcase.png?raw=true",
+      imgAlt: "Keeper"
+    },
+  
+    {
       title: "Connect-four-game",
       category: "web development",
       link: "https://smitparekh84.github.io/Connect-Four-Game/",
