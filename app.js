@@ -35,6 +35,10 @@ app.get('/success', (req, res) => {
   res.render("pages/success");
 });
 
+app.use((req, res, next) => {
+  res.status(404).render("pages/404");
+});
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
   });
